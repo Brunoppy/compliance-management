@@ -1,18 +1,28 @@
-# Compliance & Regulatory Management System
+# Compliance Management System
 
-Este projeto implementa um sistema de **gestão de conformidade e regulamentação** para empresas que precisam atender normas como **LGPD, SOX e ISO 27001**.
+## Overview
+The **Compliance Management System** is a structured SQL database designed to track corporate regulatory requirements, audits, compliance training, and employee training records. This database ensures adherence to policies like **GDPR** and **SOX**, enabling smooth compliance operations.
 
-## 📌 Funcionalidades
-- **Cadastro de Regulamentações**: Registra normas aplicáveis ao negócio.
-- **Gestão de Auditorias**: Controla auditorias internas e externas.
-- **Controle de Treinamentos**: Gerencia cursos obrigatórios para conformidade.
-- **Registro de Evidências**: Documenta histórico de conformidade.
+## Database Structure
+- **Regulations**: Stores compliance regulations and policies.
+- **Audits**: Tracks internal and external audits.
+- **Compliance Training**: Manages mandatory training related to regulations.
+- **Employee Training Records**: Keeps records of employee participation in compliance training.
 
-## 🛠 Requisitos
-- MySQL Server instalado.
-- Conhecimento básico de SQL.
+## Tables & Relationships
+- Each **Audit** is linked to a **Regulation**.
+- Each **Compliance Training** is tied to a **Regulation**.
+- **Employee Training Records** store training completion details.
 
-## 🚀 Como Usar
-1. **Criar o Banco de Dados**  
-   ```bash
-   mysql -u root -p < compliance_management.sql
+## Sample Data
+The database includes **sample data** for:
+- Regulations (GDPR, SOX)
+- Audits (Internal and External)
+- Training Programs
+- Employee Training Records
+
+## How to Use
+1. **Create Database and Tables**:
+   ```sql
+   CREATE DATABASE ComplianceManagement;
+   USE ComplianceManagement;

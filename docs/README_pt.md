@@ -16,3 +16,5 @@ Este projeto implementa um sistema de **gestão de conformidade e regulamentaç�
 1. **Criar o Banco de Dados**  
    ```bash
    mysql -u root -p < compliance_management.sql
+
+📖 Este documento também está disponível em [inglês](README.md).

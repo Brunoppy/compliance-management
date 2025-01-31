@@ -26,3 +26,5 @@ The database includes **sample data** for:
    ```sql
    CREATE DATABASE ComplianceManagement;
    USE ComplianceManagement;
+
+📖 This document is also available in [Portuguese](README-pt.md).
